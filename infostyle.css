@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-right: 2%;
+}
+
+nav a {
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    color: #9E3095;
+}
+nav a:hover {
+    color: #6e2168;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: whitesmoke;
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    margin-left: 15%;
+}
+footer {
+    background-color: whitesmoke;
+    flex-shrink: 0;
+}
+
+.c3 {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+}
+.c3 li {
+    list-style: none;
+    padding-bottom: 10px;
+}
+.c3 p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.c3 img {
+    padding-top: 30px;
+}
+.space {
+    padding-top: 35px;
+}
+
+.title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    text-align: center;
+}
+
+.staff-cards{
+    width: 290px;
+    text-align: center;
+    padding: 20px, 20px;
+    transition: all 500ms;
+    border: 1px solid transparent;
+    margin-top: 20px;
+}
+.staff-img{
+    border: 3px solid transparent;
+    transition: all 500ms;
+}
+.staff-img img{
+    width: 242px;
+}
+.staff-cards:hover{
+    transform: translateY(-5px);
+    border: 1px solid #e4e8e4;
+    box-shadow: 5px 5px 17px 3px rgba(115, 110, 138, 0.52);
+}
+p.staff-name{
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #6e2168;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    font-size: 23px;
+}
+p.staff-title{
+    text-transform: uppercase;
+    background-color: #6e2168;
+    color: white;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+    opacity: 0.8;
+}
+.staff-card:hover .staff-img{
+    transform: translateY(-5px);
+    border: 3px solid #9E3095;
+    opacity: .7;
+  }
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
