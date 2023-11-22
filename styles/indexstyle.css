@@ -44,7 +44,7 @@ header img {
     position: relative;
     text-align: center;
     color: white;
-    background-color: #6e2168;
+    background-color: rgb(110, 33, 104)
 }
 
 .c1 {
@@ -59,7 +59,7 @@ header img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #9E3095;
+    background-color: rgba(110, 33, 104, 0.5);
     padding: 5px;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;

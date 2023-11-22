@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <title>Krokeide Kantine</title>
 </head>
 <body>
@@ -24,21 +25,19 @@
     </header>
     <main>
         <div class="form">
-        <form action="scripts/send_post.php" method="post">
-            <h3>Middagsønske</h3>
-            <input type="text" name="post_mø">
-            <h3>Forklaring av middag (hvis det trengs)</h3>
-            <textarea name="post_content" cols="50" rows="20"></textarea>
-            <h3>Navn</h3>
-            <input type="text" name="post_navn">
-            <br>
-            <br>
-            <input type="submit">
-        </form>
+            <form action="scripts/send_post.php" method="post">
+                <h3>Middagsønske</h3>
+                <input type="text" name="post_mo" id="post_mo">
+                <h3>Forklaring av middag (hvis det trengs)</h3>
+                <textarea name="post_content" id="post_content" cols="50" rows="20"></textarea>
+                <h3>Navn</h3>
+                <input type="text" name="post_navn" id="post_navn">
+                <br><br>
+                <button name="submit" type="submit" class="knapp">Send inn</button>
+            </form>
+            
     </div>
     </main>
-
-
     <footer>
         <div class="c3">
             <div><img src="medie/logo-footer.svg" alt=""></div>
