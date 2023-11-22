@@ -122,3 +122,10 @@ p.staff-title{
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+
+.col-3 {
+    flex: 0 0 calc(25% - 20px); 
+    max-width: calc(25% - 20px); 
+    padding: 0 10px;
+    margin-bottom: 20px; 
+}
