@@ -66,3 +66,21 @@ footer {
 .space {
     padding-top: 35px;
 }
+.meny h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 35px;
+    color: #9E3095;
+    padding-top: 25px;
+}
+.meny {
+    margin-left: 15%;
+}
+.meny li {
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    color: #6e2168;
+    padding-bottom: 10px;
+}
