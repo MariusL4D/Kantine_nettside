@@ -1,4 +1,11 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+require '../phpmailer/src/Exception.php';
+require '../phpmailer/src/PHPMailer.php';
+require '../phpmailer/src/SMTP.php';
+
 $servername = "localhost";
 $username = "root";
 $password = "";
@@ -28,6 +35,33 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
         if ($stmt->rowCount() > 0) {
+            // Sending email
+            $mail = new PHPMailer(true);
+
+            try {
+                // Server settings for Gmail SMTP
+                $mail->isSMTP();
+                $mail->Host       = 'smtp.gmail.com';
+                $mail->SMTPAuth   = true;
+                $mail->Username   = 'middagkrokeide@gmail.com'; // Your Gmail email address
+                $mail->Password   = 'sppuclynfrwqobox'; // Your Gmail password or app password
+                $mail->SMTPSecure = 'tls';
+                $mail->Port       = 587;
+
+                // Sender and recipient settings
+                $mail->setFrom('middagkrokeide@gmail.com'); // Your name and email
+                $mail->addAddress('middagkrokeide@gmail.com'); // Recipient's email and name
+
+                // Email content
+                $mail->isHTML(true);
+                $mail->Subject = "Middagsønske fra $post_navn";
+                $mail->Body    = "Middagsønske: $post_mo <br> Forklaring av middag: $post_content <br> Navn: $post_navn";
+
+                $mail->send();
+                echo 'Message has been sent';
+            } catch (Exception $e) {
+                echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+            }
 
             header("Location: ../mø_success.html");
             exit();
@@ -38,3 +72,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "SQL Error: " . $e->getMessage();
     }
 }
+?>

@@ -1,55 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/møstyle.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/møstyle.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
     <title>Krokeide Kantine</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div>
-           <a href="index.html">
-            <img src="medie/logo-krokeide-vgs.svg" alt="Krokeide logo">
-           </a> 
-        </div>
-        <nav>
-            <a href="um.html">Ukens Meny</a>
-            <a href="mø.html">Middagsønsker</a>
-            <a href="info.html">Info</a>
-        </nav>
+      <div>
+        <a href="index.html">
+          <img src="medie/logo-krokeide-vgs.svg" alt="Krokeide logo" />
+        </a>
+      </div>
+      <nav>
+        <a href="um.html">Ukens Meny</a>
+        <a href="mø.html">Middagsønsker</a>
+        <a href="info.html">Info</a>
+      </nav>
     </header>
     <main>
-        <div class="form">
-            <form action="scripts/send_post.php" method="post">
-                <h3>Middagsønske</h3>
-                <input type="text" name="post_mo" id="post_mo">
-                <h3>Forklaring av middag (hvis det trengs)</h3>
-                <textarea name="post_content" id="post_content" cols="50" rows="20"></textarea>
-                <h3>Navn</h3>
-                <input type="text" name="post_navn" id="post_navn">
-                <br><br>
-                <button name="submit" type="submit">Send inn</button>
-            </form>
-            
-    </div>
+      <div class="form">
+        <form action="scripts/send_post.php" method="post">
+          <h3>Middagsønske</h3>
+          <input type="text" name="post_mo" id="post_mo" />
+          <h3>Forklaring av middag (hvis det trengs)</h3>
+          <textarea
+            name="post_content"
+            id="post_content"
+            cols="50"
+            rows="20"
+          ></textarea>
+          <h3>Navn</h3>
+          <input type="text" name="post_navn" id="post_navn" />
+          <br /><br />
+          <button name="submit" type="submit">Send inn</button>
+        </form>
+      </div>
     </main>
     <footer>
-        <div class="c3">
-            <div><img src="medie/logo-footer.svg" alt=""></div>
-                <div class="space">
-                <li>Kodet av: Marius Larsson</li>
-                <li>Kontakt mail: marlar@krokeide.vgs.no</li>
-                </div>
-                <div>
-                <p>Krokeide kontakt info</p>
-                    <li>Adresse: Korsnesvegen 70 5244 Fana</li>
-                    <li>Tlf: 55 10 87 00</li>
-                    <li>Mail: firmapost@krokeide.vgs.no</li>
-                </div>
+      <div class="c3">
+        <div><img src="medie/logo-footer.svg" alt="" /></div>
+        <div class="space">
+          <li>Kodet av: Marius Larsson</li>
+          <li>Kontakt mail: marlar@krokeide.vgs.no</li>
         </div>
-        </footer>
-</body>
+        <div>
+          <p>Krokeide kontakt info</p>
+          <li>Adresse: Korsnesvegen 70 5244 Fana</li>
+          <li>Tlf: 55 10 87 00</li>
+          <li>Mail: firmapost@krokeide.vgs.no</li>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
