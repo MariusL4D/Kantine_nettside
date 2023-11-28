@@ -54,7 +54,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Email content
                 $mail->isHTML(true);
-                $mail->Subject = "Middagsønske fra $post_navn";
+                $mail->Subject = "Middagsonske fra $post_navn";
                 $mail->Body    = "Middagsønske: $post_mo <br> Forklaring av middag: $post_content <br> Navn: $post_navn";
 
                 $mail->send();
