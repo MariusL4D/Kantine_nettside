@@ -17,6 +17,7 @@ var updates2 = [
   'Taco alla Andreas med alt det gode til.',
   'Nesten pasta carbonara med kylling.',
 ];
+
 var date = new Date();
 var currentDay = date.getDay();
 
