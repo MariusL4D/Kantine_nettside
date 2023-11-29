@@ -1,2 +1,4 @@
 *scripts/send_post.php
 ignore_folder/
+# Ignore .env file
+*.env
