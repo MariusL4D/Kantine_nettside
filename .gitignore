@@ -2,3 +2,4 @@
 ignore_folder/
 # Ignore .env file
 *.env
+*.vscode/launch.json
